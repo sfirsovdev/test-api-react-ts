@@ -1,14 +1,20 @@
-import { CardsJob } from './components/CardsJob'
-import {cards} from './data/cards'
+import {Route, Routes} from 'react-router-dom'
+import { ProductPage } from './pages/ProductsPage';
+import { AboutPage } from './pages/AboutPage'
+import { Navigation} from './components/Naviagation'
 
 
 
 function App() {
   return (
-    <div className='container mx-auto max-w-2xl pt-5'>
-      <CardsJob card={cards[0]} />  
-        <CardsJob card={cards[1]}/> 
-    </div>
+    <>
+      <Navigation />
+      <Routes>
+        <Route path='/' element={<ProductPage />} />
+        <Route path='/about' element={<AboutPage/>}/>
+        </Routes>
+      </>
   )
-}
+  }
+
 export default App;
