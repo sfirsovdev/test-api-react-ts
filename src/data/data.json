@@ -1,6 +1,4 @@
-import { IProduct } from "../models";
-
-export const products:IProduct[] = [
+[
     {
         "id": "635ee6d304601d61a71951f6",
         "name": "Sureplex123",

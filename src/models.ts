@@ -1,12 +1,16 @@
 export interface IProduct {
-    id: number
+    id: string
+    name: string
+    email: string
+    phone: string
     title: string
-    price: number
+    salary: string
+    address: string
+    benefits: {}
+    location: {}
+    pictures: {}
+    createdAt: {}
+    updatedAt: {}
     description: string
-    category: string
-    image: string
-    rating: {
-        rate: number
-        count: number
-    }
+    employment_type: {}
 }

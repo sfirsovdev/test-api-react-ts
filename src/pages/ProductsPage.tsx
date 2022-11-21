@@ -1,7 +1,7 @@
 import { Product } from '../components/Product'
 import { useProducts } from '../hooks/products';
 import { Loader } from '../components/Loader'
-import { ErrorMessage} from '../components/ErrorMessage'
+import { ErrorMessage } from '../components/ErrorMessage'
 
 
 export function ProductPage() {
